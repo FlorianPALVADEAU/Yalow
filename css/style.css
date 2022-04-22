@@ -1,0 +1,1964 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+  cursor: default;
+}
+
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  height: 11.5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+header nav {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+header nav ul li {
+  font-size: 18px;
+}
+header nav ul li img {
+  cursor: pointer;
+}
+header nav ul li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+header nav ul li a:hover {
+  color: #426CFF;
+}
+header nav ul li a, header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active {
+  text-decoration: none;
+  color: inherit;
+}
+header nav ul li a:link {
+  text-decoration: none;
+  color: #000000;
+}
+header nav ul li a:hover {
+  text-decoration: none;
+  color: #426CFF;
+}
+header nav ul li .selected {
+  color: #426CFF;
+}
+header nav ul li .selected:hover {
+  color: #9aaae2;
+}
+header .logRegister {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logRegister :nth-child(1) {
+  background-color: white;
+  color: #426CFF;
+  border: 1.5px solid #426CFF;
+  margin-right: 2vw;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+header .logRegister :nth-child(1):hover {
+  color: white;
+  background-color: #426CFF;
+  transition: 0.3s ease-in-out;
+}
+header .logRegister :nth-child(2) {
+  background-color: #426CFF;
+  color: white;
+  border: 1.5px solid #426CFF;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+header .logRegister :nth-child(2):hover {
+  background-color: white;
+  color: #426CFF;
+  transition: 0.3s all ease-in-out;
+}
+
+.subHeader {
+  width: 100vw;
+  height: 80vh;
+  background-image: url(../src/header-bg.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.subHeader h1 {
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 5vh;
+}
+.subHeader h2 {
+  width: 30%;
+  font-size: 18px;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  margin-bottom: 10vh;
+  letter-spacing: 1px;
+}
+.subHeader a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #426CFF;
+  color: white;
+  border: 1.5px solid #426CFF;
+  width: 12vw;
+  height: 6vh;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.subHeader a:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: black;
+  border: 1.5px solid black;
+  transition: 0.3s all ease-in-out;
+}
+
+.projectPresentation {
+  width: 90vw;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5vh;
+}
+.projectPresentation .leftPart {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projectPresentation .leftPart img {
+  margin-bottom: 2vh;
+}
+.projectPresentation .leftPart .slider {
+  width: 30%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.projectPresentation .leftPart .slider .arrow, .projectPresentation .leftPart .slider .dash {
+  cursor: pointer;
+}
+.projectPresentation .leftPart .slider .arrow:hover, .projectPresentation .leftPart .slider .dash:hover {
+  transform: scale(1.1);
+  transition: 0.2s all ease-in-out;
+}
+.projectPresentation .rightPart {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.projectPresentation .rightPart h3 {
+  font-size: 44px;
+  font-weight: 500;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+.projectPresentation .rightPart h3 .yalow {
+  color: #426CFF;
+}
+.projectPresentation .rightPart p {
+  font-size: 18px;
+  font-weight: 300;
+  width: 70%;
+}
+
+.goals {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5vh;
+}
+.goals .leftPart {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.goals .leftPart h3 {
+  font-size: 44px;
+  font-weight: 500;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+.goals .leftPart h3 .yalow {
+  color: #426CFF;
+}
+.goals .leftPart p {
+  font-size: 18px;
+  font-weight: 300;
+  width: 70%;
+}
+.goals .rightPart {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe {
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.subscribe .topPart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 30%;
+}
+.subscribe .topPart .card {
+  width: 20%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #B8B8B8;
+  border-radius: 35px;
+}
+.subscribe .topPart .card img {
+  margin-bottom: 2vh;
+}
+.subscribe .topPart .card p {
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+}
+.subscribe .topPart .card1 {
+  background-color: #426CFF;
+  border: 0;
+  box-shadow: 10px 10px 20px #426bff67;
+}
+.subscribe .topPart .card1 p {
+  color: white;
+}
+.subscribe .bottomPart {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.subscribe .bottomPart .leftPart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.subscribe .bottomPart .leftPart h3 {
+  font-size: 44px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 6vh;
+}
+.subscribe .bottomPart .leftPart h3 .blue {
+  color: #426CFF;
+}
+.subscribe .bottomPart .leftPart p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10vh;
+  width: 80%;
+}
+.subscribe .bottomPart .leftPart a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #426CFF;
+  color: white;
+  border: 1.5px solid #426CFF;
+  width: 50%;
+  height: 6vh;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.subscribe .bottomPart .leftPart a:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: black;
+  border: 1.5px solid black;
+  transition: 0.3s all ease-in-out;
+}
+.subscribe .bottomPart .rightPart {
+  z-index: 2;
+  width: 35vw;
+  height: 100%;
+}
+.subscribe .bottomPart .rightPart .cContainer {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.subscribe .bottomPart .rightPart .cContainer .card {
+  z-index: 10 !important;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  border-radius: 30px;
+  height: 80%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 20px #426bff2f;
+  background-color: white;
+}
+.subscribe .bottomPart .rightPart .cContainer .card h4 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.subscribe .bottomPart .rightPart .cContainer .card .p1 {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe .bottomPart .rightPart .cContainer .card .p1 .blue {
+  font-size: 60px;
+  font-weight: 500;
+  color: #426CFF;
+}
+.subscribe .bottomPart .rightPart .cContainer .card .p2 {
+  font-size: 18px;
+  font-weight: 200;
+  width: 50%;
+  text-align: center;
+}
+.subscribe .bottomPart .rightPart .cContainer .card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #426CFF;
+  color: white;
+  border: 1.5px solid #426CFF;
+  width: 80%;
+  height: 10%;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.subscribe .bottomPart .rightPart .cContainer .card a:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: black;
+  border: 1.5px solid black;
+  transition: 0.3s all ease-in-out;
+}
+.subscribe .bottomPart .rightPart .overlay {
+  z-index: 0 !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: -80vh;
+  margin-left: 7vw;
+}
+.subscribe .bottomPart .rightPart .overlay .overlayy {
+  z-index: 0 !important;
+  height: 80%;
+  width: 70%;
+  border-radius: 30px;
+  border: 1px solid #B8B8B8;
+}
+
+.sect-contact {
+  margin-top: 5vh;
+  padding-right: 40vw;
+  margin-left: 10vw;
+}
+.sect-contact .text-contact h1 {
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+  text-align: left;
+  padding-right: 5vw;
+}
+.sect-contact .text-contact .under-blue {
+  color: #426CFF;
+  font-size: 18px;
+}
+.sect-contact .text-contact .description {
+  font-size: 18px;
+}
+.sect-contact .text-contact a {
+  background-color: #426CFF;
+  color: white;
+  border: 1.5px solid #426CFF;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 4vh;
+}
+.sect-contact .text-contact a:hover {
+  background-color: white;
+  color: #426CFF;
+  transition: 0.3s all ease-in-out;
+}
+
+.contact {
+  width: 100%;
+  margin: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact h3 {
+  font-size: 44px;
+  font-weight: 500;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+.contact p {
+  font-size: 18px;
+  margin-bottom: 2%;
+}
+.contact .contact-div {
+  width: 80%;
+  padding: 3%;
+  background-color: #F4F4FF;
+  border-radius: 30px;
+}
+.contact .contact-div .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact .contact-div .contact-form .form-name {
+  display: flex;
+}
+.contact .contact-div .contact-form input[type=text] {
+  font-size: 18px;
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 1%;
+  display: inline-block;
+  border: none;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+.contact .contact-div .contact-form input[name=lname] {
+  width: 50%;
+}
+.contact .contact-div .contact-form input[name=fname] {
+  width: 50%;
+  margin-right: 0.5%;
+}
+.contact .contact-div .contact-form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  display: inline-block;
+  border: none;
+  border-radius: 12px;
+  box-sizing: border-box;
+  resize: none;
+  font-size: 18px;
+}
+.contact .contact-div .contact-form .contact-submit {
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: black;
+  border-radius: 30px;
+  font-size: 18px;
+  float: right;
+  margin-right: 2%;
+  margin-top: 1%;
+}
+
+.about-sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+.about-sub .about_left {
+  width: 60%;
+}
+.about-sub .about_left .about-above {
+  color: #426CFF;
+}
+.about-sub .about_left h1 {
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+  text-align: left;
+  padding-right: 5vw;
+}
+.about-sub .about_left p {
+  font-size: 18px;
+}
+.about-sub .about_left a {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #426CFF;
+  color: white;
+  border: 1.5px solid #426CFF;
+  width: 12vw;
+  height: 6vh;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.about-sub .about_left a:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: black;
+  border: 1.5px solid black;
+  transition: 0.3s all ease-in-out;
+}
+.about-sub .about_right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.fund-sect {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 4vh;
+}
+.fund-sect .square {
+  border: 1px solid #E5E5E5;
+  border-radius: 39px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+}
+.fund-sect .square h3 {
+  font-size: 44px;
+  font-weight: 500;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+.fund-sect .square p {
+  font-size: 18px;
+  text-align: center;
+}
+.fund-sect .square h1 {
+  font-weight: 600;
+  color: #426CFF;
+  font-size: 112px;
+}
+
+.team-sect {
+  margin-top: 5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  width: 90vw;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.team-sect .left {
+  padding-top: 5%;
+}
+.team-sect .left h3 {
+  font-size: 44px;
+  font-weight: 500;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+.team-sect .left p {
+  padding-right: 30%;
+}
+.team-sect .right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.team-sect .right img {
+  margin-bottom: 2vh;
+}
+.team-sect .right .slider {
+  width: 50%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.team-sect .right .slider .arrow, .team-sect .right .slider .dash {
+  cursor: pointer;
+}
+.team-sect .right .slider .arrow:hover, .team-sect .right .slider .dash:hover {
+  transform: scale(1.1);
+  transition: 0.2s all ease-in-out;
+}
+
+.ambi-sect {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 4vh;
+}
+.ambi-sect .square {
+  border: 1px solid #E5E5E5;
+  border-radius: 39px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+}
+.ambi-sect .square h3 {
+  font-size: 44px;
+  font-weight: 500;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+.ambi-sect .square p {
+  font-size: 18px;
+  text-align: center;
+}
+.ambi-sect .square h1 {
+  font-weight: 600;
+  color: #426CFF;
+  font-size: 112px;
+  line-height: 90px;
+  margin-top: 5%;
+}
+.ambi-sect .square h2 {
+  color: #426CFF;
+  font-size: 44px;
+  font-weight: normal;
+}
+
+footer {
+  background-color: #F4F4FF;
+  width: 100vw;
+}
+footer .div_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+footer .div_footer img {
+  margin-top: 20%;
+}
+footer .div_footer .services, footer .div_footer .politique {
+  display: flex;
+  flex-direction: column;
+}
+footer .div_footer .services .text-foot, footer .div_footer .politique .text-foot {
+  font-size: 20px;
+  margin-top: 8%;
+}
+footer .div_footer .services a, footer .div_footer .services a:hover, footer .div_footer .services a:focus, footer .div_footer .services a:active, footer .div_footer .politique a, footer .div_footer .politique a:hover, footer .div_footer .politique a:focus, footer .div_footer .politique a:active {
+  text-decoration: none;
+  color: inherit;
+}
+footer .div_footer .services a:link, footer .div_footer .politique a:link {
+  text-decoration: none;
+  color: #000000;
+}
+footer .div_footer .services a:hover, footer .div_footer .politique a:hover {
+  text-decoration: none;
+  color: #426CFF;
+}
+footer .div_footer .reseaux {
+  padding-top: 2%;
+  width: 6vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .div_footer .reseaux img {
+  width: 44px;
+  height: 44px;
+}
+
+.checkout {
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.checkout .container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.checkout .container .leftPart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}
+.checkout .container .leftPart h1 {
+  font-size: 44px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 6vh;
+}
+.checkout .container .leftPart form {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.checkout .container .leftPart form .buttons {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+.checkout .container .leftPart form .buttons .creditcard {
+  margin-left: 5vw;
+  padding-left: 0;
+}
+.checkout .container .leftPart form .buttons .paypal, .checkout .container .leftPart form .buttons .creditcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 10px 10px 20px #426bff2f;
+  color: black;
+  border: 0.5px solid #426bff2f;
+  width: 17vw;
+  height: 17vh;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-image: none;
+}
+.checkout .container .leftPart form .buttons .paypal p, .checkout .container .leftPart form .buttons .creditcard p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 3vh;
+  width: 80%;
+  height: 10%;
+}
+.checkout .container .leftPart form .buttons .paypal:hover, .checkout .container .leftPart form .buttons .creditcard:hover {
+  background-color: #426CFF;
+  color: #ffffff;
+  border: 1.5px solid #426CFF;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.checkout .container .leftPart form .buttons .paypal:hover img, .checkout .container .leftPart form .buttons .creditcard:hover img {
+  filter: invert(100%);
+}
+.checkout .container .leftPart form label {
+  margin-bottom: -1vh;
+  margin-left: 0.5vw;
+}
+.checkout .container .leftPart form .ds {
+  margin-top: 7vh;
+  margin-bottom: -5vh;
+}
+.checkout .container .leftPart form .mainLabel {
+  font-size: 24px;
+  font-weight: 400;
+}
+.checkout .container .leftPart form .label {
+  font-size: 18px;
+  font-weight: 200;
+}
+.checkout .container .leftPart form .creditcard {
+  width: 50%;
+  height: 7vh;
+  border-radius: 18px;
+  border: 0.5px solid #426bff2f;
+  box-shadow: 15px 15px 20px #426bff2f;
+  background-image: url(../src/mastercard.png);
+  background-position: 10px, left;
+  background-size: 7%;
+  background-repeat: no-repeat;
+  padding-left: 5vw;
+  cursor: text;
+}
+.checkout .container .leftPart form .creditcard::placeholder {
+  color: rgba(0, 0, 0, 0.432);
+  font-size: 18px;
+}
+.checkout .container .leftPart form .dateSelection {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 40%;
+  height: 25%;
+}
+.checkout .container .leftPart form .dateSelection .day {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.checkout .container .leftPart form .dateSelection .day label {
+  margin-bottom: 0.5vh;
+}
+.checkout .container .leftPart form .dateSelection .day #day {
+  width: 40%;
+  height: 20%;
+  border: 0.5px solid #426bff2f;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px #426bff2f;
+  cursor: pointer;
+}
+.checkout .container .leftPart form .dateSelection .monthAndYear {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.checkout .container .leftPart form .dateSelection .monthAndYear label {
+  margin-bottom: 0.5vh;
+}
+.checkout .container .leftPart form .dateSelection .monthAndYear input {
+  width: 100%;
+  height: 20%;
+  border: 0.5px solid #426bff2f;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px #426bff2f;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.checkout .container .leftPart form .cryptogram {
+  width: 40%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: -2vh;
+  cursor: pointer;
+}
+.checkout .container .leftPart form .cryptogram .help {
+  display: none;
+  visibility: hidden;
+}
+.checkout .container .leftPart form .cryptogram img {
+  margin-left: 1vw;
+  cursor: pointer;
+}
+.checkout .container .leftPart form .cryptogram img:hover .help {
+  display: block;
+  visibility: visible;
+  width: 100%;
+  height: 20px;
+  background-color: #d8d8d8;
+  font-size: 10px;
+}
+.checkout .container .leftPart form .cryptog {
+  width: 12%;
+  height: 5vh;
+  border-radius: 10px;
+  border: 0.5px solid #426bff2f;
+  box-shadow: 10px 10px 15px #426bff2f;
+  margin-bottom: 5vh;
+}
+.checkout .container .leftPart form .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #426CFF;
+  color: white;
+  border: 1.5px solid #426CFF;
+  width: 12vw;
+  height: 6vh;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.checkout .container .leftPart form .submit:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: black;
+  border: 1.5px solid black;
+  transition: 0.3s all ease-in-out;
+}
+.checkout .container .rightPart {
+  z-index: 2;
+  width: 35vw;
+  height: 60%;
+}
+.checkout .container .rightPart .cContainer {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.checkout .container .rightPart .cContainer .card {
+  z-index: 10 !important;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  border-radius: 30px;
+  height: 80%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 20px #426bff2f;
+  background-color: white;
+}
+.checkout .container .rightPart .cContainer .card h4 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.checkout .container .rightPart .cContainer .card .p1 {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout .container .rightPart .cContainer .card .p1 .blue {
+  font-size: 60px;
+  font-weight: 500;
+  color: #426CFF;
+}
+.checkout .container .rightPart .cContainer .card .p2 {
+  font-size: 18px;
+  font-weight: 200;
+  width: 50%;
+  text-align: center;
+}
+.checkout .container .rightPart .overlay {
+  z-index: 0 !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: -100vh;
+  margin-left: 7vw;
+}
+.checkout .container .rightPart .overlay .overlayy {
+  z-index: 0 !important;
+  height: 80%;
+  width: 70%;
+  border-radius: 30px;
+  border: 1px solid #B8B8B8;
+}
+
+.thanksContainer {
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.thanksContainer h1 {
+  font-size: 44px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 6vh;
+}
+.thanksContainer .textArea {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 0.5px solid #426bff2f;
+  border-radius: 30px;
+  padding: 25px;
+  margin-bottom: 10vh;
+}
+.thanksContainer .textArea :nth-child(2) {
+  margin-bottom: 2vh;
+}
+.thanksContainer .textArea h2 {
+  font-size: 34px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 6vh;
+}
+.thanksContainer .textArea p {
+  display: flex;
+}
+.thanksContainer .textArea p .blue {
+  color: #426CFF;
+  font-size: 200;
+}
+.thanksContainer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #426CFF;
+  color: white;
+  border: 1.5px solid #426CFF;
+  width: 12vw;
+  height: 6vh;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.thanksContainer a:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: black;
+  border: 1.5px solid black;
+  transition: 0.3s all ease-in-out;
+}
+
+@media screen and (max-width: 1280px) {
+  header nav {
+    width: 50%;
+  }
+  header nav ul {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+  header .logRegister {
+    width: 30%;
+  }
+  header .logRegister :nth-child(1) {
+    margin-right: 5vw;
+    width: 15vw;
+    height: 5vh;
+  }
+  header .logRegister :nth-child(2) {
+    width: 20vw;
+    height: 5vh;
+  }
+
+  .checkout {
+    width: 100vw;
+    height: 150vh;
+  }
+  .checkout .container {
+    width: 90%;
+    height: 100%;
+  }
+  .checkout .container .leftPart {
+    width: 60%;
+    height: 100%;
+  }
+  .checkout .container .leftPart form {
+    width: 100%;
+    height: 60%;
+  }
+  .checkout .container .leftPart form .buttons {
+    width: 80%;
+    height: 20%;
+    margin-bottom: 10vh;
+  }
+  .checkout .container .leftPart form .buttons .creditcard {
+    margin-left: 7vw;
+  }
+  .checkout .container .leftPart form .buttons .paypal, .checkout .container .leftPart form .buttons .creditcard {
+    width: 220vw;
+    height: 20vh;
+  }
+  .checkout .container .leftPart form label {
+    margin-left: 0.5vw;
+  }
+  .checkout .container .leftPart form .ds {
+    margin-top: 7vh;
+    margin-bottom: -5vh;
+  }
+  .checkout .container .leftPart form .mainLabel {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .checkout .container .leftPart form .label {
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .checkout .container .leftPart form .creditcard {
+    width: 70%;
+    height: 7vh;
+    background-size: 11%;
+    background-repeat: no-repeat;
+    padding-left: 7vw;
+    font-size: 20px;
+    margin-top: 1vh;
+    cursor: text;
+  }
+  .checkout .container .leftPart form .creditcard::placeholder {
+    color: rgba(0, 0, 0, 0.432);
+    font-size: 20px;
+  }
+  .checkout .container .leftPart form .dateSelection {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    height: 35%;
+  }
+  .checkout .container .leftPart form .dateSelection .day {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .checkout .container .leftPart form .dateSelection .day label {
+    margin-bottom: 0.5vh;
+  }
+  .checkout .container .leftPart form .dateSelection .day #day {
+    width: 40%;
+    height: 20%;
+    border: 0.5px solid #426bff2f;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px #426bff2f;
+    cursor: pointer;
+  }
+  .checkout .container .leftPart form .dateSelection .monthAndYear {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .checkout .container .leftPart form .dateSelection .monthAndYear label {
+    margin-bottom: 0.5vh;
+  }
+  .checkout .container .leftPart form .dateSelection .monthAndYear input {
+    width: 100%;
+    height: 20%;
+    border: 0.5px solid #426bff2f;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px #426bff2f;
+    padding-left: 15px;
+    cursor: pointer;
+  }
+  .checkout .container .leftPart form .cryptogram {
+    width: 40%;
+    height: 10%;
+    margin-bottom: -2vh;
+  }
+  .checkout .container .leftPart form .cryptog {
+    width: 30%;
+    height: 7vh;
+    border-radius: 10px;
+    border: 0.5px solid #426bff2f;
+    box-shadow: 10px 10px 15px #426bff2f;
+    margin-bottom: 5vh;
+    font-size: 20px;
+    padding-left: 1%;
+  }
+  .checkout .container .leftPart form .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #426CFF;
+    color: white;
+    border: 1.5px solid #426CFF;
+    width: 20vw;
+    height: 6vh;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .checkout .container .leftPart form .submit:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+    color: black;
+    border: 1.5px solid black;
+    transition: 0.3s all ease-in-out;
+  }
+  .checkout .container .rightPart {
+    z-index: 2;
+    width: 40%;
+    height: 40%;
+  }
+  .checkout .container .rightPart .cContainer {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .checkout .container .rightPart .cContainer .card {
+    z-index: 10 !important;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    border-radius: 30px;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 20px #426bff2f;
+    background-color: white;
+  }
+  .checkout .container .rightPart .cContainer .card h4 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .checkout .container .rightPart .cContainer .card .p1 {
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkout .container .rightPart .cContainer .card .p1 .blue {
+    font-size: 60px;
+    font-weight: 500;
+    color: #426CFF;
+  }
+  .checkout .container .rightPart .cContainer .card .p2 {
+    font-size: 18px;
+    font-weight: 200;
+    width: 50%;
+    text-align: center;
+  }
+  .checkout .container .rightPart .overlay {
+    z-index: 0 !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: -70vh;
+    margin-left: 7vw;
+  }
+  .checkout .container .rightPart .overlay .overlayy {
+    z-index: 0 !important;
+    height: 80%;
+    width: 70%;
+    border-radius: 30px;
+    border: 1px solid #B8B8B8;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header nav {
+    width: 60vw;
+    height: 100%;
+  }
+  header nav ul {
+    width: 100%;
+    height: 100%;
+  }
+  header nav ul li {
+    font-size: 18px;
+  }
+  header nav ul li :nth-child(1) :nth-child(2) {
+    display: none;
+  }
+  header .logRegister {
+    width: 30vw;
+    font-size: 12px;
+  }
+
+  .subHeader h1 {
+    font-size: 45px;
+    margin-bottom: 5vh;
+  }
+  .subHeader h2 {
+    width: 40%;
+    font-size: 15px;
+  }
+  .subHeader a {
+    width: 25vw;
+    height: 6vh;
+  }
+
+  .projectPresentation {
+    width: 90vw;
+    height: 60vh;
+  }
+  .projectPresentation .leftPart {
+    width: 40%;
+    height: 100%;
+  }
+  .projectPresentation .leftPart img {
+    margin-bottom: 2vh;
+    transform: scale(0.75);
+  }
+  .projectPresentation .leftPart .slider {
+    width: 50%;
+    height: 10%;
+  }
+  .projectPresentation .rightPart {
+    width: 40%;
+    height: 100%;
+  }
+  .projectPresentation .rightPart h3 {
+    font-size: 34px;
+  }
+  .projectPresentation .rightPart p {
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .goals {
+    width: 80vw;
+    height: 60vh;
+  }
+  .goals .leftPart {
+    width: 40%;
+    height: 100%;
+  }
+  .goals .leftPart h3 {
+    font-size: 34px;
+  }
+  .goals .leftPart p {
+    font-size: 15px;
+    font-weight: 300;
+    width: 90%;
+  }
+  .goals .rightPart {
+    transform: scale(0.75);
+  }
+
+  .subscribe {
+    width: 90vw;
+    height: 120vh;
+  }
+  .subscribe .topPart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85vw;
+    height: 30%;
+  }
+  .subscribe .topPart .card {
+    width: 25%;
+    height: 60%;
+  }
+  .subscribe .topPart .card img {
+    margin-bottom: 2vh;
+  }
+  .subscribe .topPart .card p {
+    font-size: 15px;
+  }
+  .subscribe .bottomPart {
+    width: 90%;
+    height: 60%;
+  }
+  .subscribe .bottomPart .leftPart {
+    width: 50%;
+    height: 100%;
+  }
+  .subscribe .bottomPart .leftPart h3 {
+    font-size: 34px;
+  }
+  .subscribe .bottomPart .leftPart p {
+    font-size: 15px;
+    width: 80%;
+  }
+  .subscribe .bottomPart .leftPart a {
+    width: 60%;
+    height: 6vh;
+    font-size: 12px;
+  }
+  .subscribe .bottomPart .rightPart {
+    z-index: 2;
+    width: 50vw;
+    height: 80%;
+  }
+  .subscribe .bottomPart .rightPart .cContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .subscribe .bottomPart .rightPart .cContainer .card {
+    height: 90%;
+    width: 70%;
+  }
+  .subscribe .bottomPart .rightPart .cContainer .card h4 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .subscribe .bottomPart .rightPart .cContainer .card .p1 {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .subscribe .bottomPart .rightPart .cContainer .card .p2 {
+    font-size: 15px;
+    width: 50%;
+  }
+  .subscribe .bottomPart .rightPart .cContainer .card a {
+    font-size: 12px;
+  }
+  .subscribe .bottomPart .rightPart .overlay {
+    margin-top: -60vh;
+    margin-left: 10vw;
+  }
+
+  .sect-contact {
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 30%;
+  }
+
+  .contact {
+    width: 100%;
+    margin: 10%;
+  }
+  .contact h3 {
+    font-size: 34px;
+  }
+  .contact p {
+    font-size: 15px;
+    margin-bottom: 2%;
+  }
+  .contact .contact-div {
+    width: 80%;
+    padding: 3%;
+    background-color: #F4F4FF;
+    border-radius: 30px;
+  }
+  .contact .contact-div .contact-form input[type=text] {
+    font-size: 15px;
+  }
+  .contact .contact-div .contact-form textarea {
+    font-size: 15px;
+  }
+  .contact .contact-div .contact-form .contact-submit {
+    font-size: 15px;
+  }
+
+  footer .div_footer .services .text-foot, footer .div_footer .politique .text-foot {
+    font-size: 15px;
+    margin-top: 8%;
+  }
+
+  .container {
+    width: 70vw;
+    height: 80vh;
+  }
+  .container h1 {
+    font-size: 34px;
+  }
+  .container .textArea {
+    width: 100%;
+    height: 50%;
+  }
+  .container .textArea :nth-child(2) {
+    margin-bottom: 2vh;
+  }
+  .container .textArea h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 6vh;
+  }
+  .container a {
+    font-size: 12px;
+    width: 17vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  header {
+    height: 20vh;
+    flex-direction: column;
+  }
+  header nav {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+  }
+  header nav ul {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding: 20px;
+  }
+  header nav ul li {
+    font-size: 16px;
+  }
+  header nav ul li img {
+    display: none;
+  }
+  header nav ul :nth-child(3) {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  header .logRegister {
+    width: 100vw;
+    font-size: 12px;
+  }
+  header .logRegister :nth-child(1), header .logRegister :nth-child(2) {
+    width: 30%;
+    height: 30%;
+  }
+
+  .subHeader h1 {
+    font-size: 25px;
+    margin-bottom: 5vh;
+  }
+  .subHeader h2 {
+    width: 70%;
+    font-size: 15px;
+  }
+  .subHeader a {
+    width: 50vw;
+    height: 6vh;
+    font-size: 12px;
+  }
+
+  .projectPresentation {
+    width: 90vw;
+    height: 40vh;
+    flex-direction: column-reverse;
+  }
+  .projectPresentation .leftPart {
+    width: 100%;
+    height: 100%;
+  }
+  .projectPresentation .leftPart img {
+    display: none;
+  }
+  .projectPresentation .leftPart .slider {
+    display: none;
+  }
+  .projectPresentation .rightPart {
+    width: 100%;
+    height: 100%;
+  }
+  .projectPresentation .rightPart h3 {
+    font-size: 24px;
+  }
+  .projectPresentation .rightPart p {
+    font-size: 13px;
+    width: 90%;
+  }
+
+  .goals {
+    width: 90%;
+    height: 40vh;
+  }
+  .goals .leftPart {
+    align-items: flex-end;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+  }
+  .goals .leftPart h3 {
+    font-size: 24px;
+  }
+  .goals .leftPart p {
+    text-align: right;
+    font-size: 13px;
+    font-weight: 300;
+    width: 90%;
+  }
+  .goals .rightPart {
+    display: none;
+  }
+
+  .subscribe {
+    margin-top: -10vh;
+    width: 90vw;
+    height: 180vh;
+  }
+  .subscribe .topPart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    height: 30%;
+  }
+  .subscribe .topPart .card {
+    width: 30%;
+    height: 30%;
+  }
+  .subscribe .topPart .card img {
+    margin-bottom: 2vh;
+    transform: scale(0.5);
+  }
+  .subscribe .topPart .card p {
+    font-size: 12px;
+  }
+  .subscribe .bottomPart {
+    width: 90%;
+    height: 60%;
+    flex-direction: column;
+    margin-top: -20vh;
+  }
+  .subscribe .bottomPart .leftPart {
+    width: 100%;
+    height: 100%;
+  }
+  .subscribe .bottomPart .leftPart h3 {
+    font-size: 24px;
+  }
+  .subscribe .bottomPart .leftPart p {
+    font-size: 12px;
+    width: 90%;
+  }
+  .subscribe .bottomPart .leftPart a {
+    width: 60%;
+    height: 6vh;
+    font-size: 12px;
+  }
+  .subscribe .bottomPart .rightPart {
+    margin-top: 15vh;
+    z-index: 2;
+    width: 80vw;
+    height: 100%;
+  }
+  .subscribe .bottomPart .rightPart .cContainer {
+    top: 0;
+    right: 50%;
+    width: 120%;
+    height: 100%;
+    align-items: center;
+  }
+  .subscribe .bottomPart .rightPart .cContainer .card {
+    height: 90%;
+    width: 100vw;
+    border: 1px solid #B8B8B8;
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .subscribe .bottomPart .rightPart .cContainer .card h4 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .subscribe .bottomPart .rightPart .cContainer .card .p1 {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .subscribe .bottomPart .rightPart .cContainer .card .p2 {
+    font-size: 15px;
+    width: 50%;
+  }
+  .subscribe .bottomPart .rightPart .cContainer .card a {
+    font-size: 12px;
+  }
+  .subscribe .bottomPart .rightPart .overlay {
+    display: none;
+  }
+
+  footer {
+    background-color: #F4F4FF;
+    width: 100vw;
+  }
+  footer .div_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  footer .div_footer img {
+    display: none;
+  }
+  footer .div_footer .services, footer .div_footer .politique {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .div_footer .services .text-foot, footer .div_footer .politique .text-foot {
+    font-size: 12px;
+    margin-top: 5%;
+  }
+  .container {
+    width: 90vw;
+    height: 120vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .container h1 {
+    font-size: 24px;
+  }
+  .container .textArea {
+    width: 100%;
+    height: 50%;
+  }
+  .container .textArea :nth-child(2) {
+    margin-bottom: 2vh;
+  }
+  .container .textArea h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 6vh;
+    text-align: left;
+  }
+  .container .textArea p {
+    font-size: 12px;
+    text-align: left;
+  }
+  .container a {
+    font-size: 10x;
+    width: 50vw;
+  }
+
+  .checkout {
+    width: 100vw;
+    height: 150vh;
+  }
+  .checkout .container {
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .checkout .container .leftPart {
+    width: 100%;
+    height: 100%;
+  }
+  .checkout .container .leftPart form {
+    width: 100%;
+    height: 60%;
+  }
+  .checkout .container .leftPart form .buttons {
+    width: 80%;
+    height: 20%;
+    margin-bottom: 10vh;
+  }
+  .checkout .container .leftPart form .buttons .creditcard {
+    margin-left: 7vw;
+  }
+  .checkout .container .leftPart form .buttons .paypal, .checkout .container .leftPart form .buttons .creditcard {
+    width: 220vw;
+    height: 20vh;
+  }
+  .checkout .container .leftPart form .creditcard {
+    width: 70%;
+    height: 7vh;
+    background-size: 11%;
+    background-repeat: no-repeat;
+    padding-left: 12vw;
+    font-size: 16px;
+    margin-top: 1vh;
+    cursor: text;
+  }
+  .checkout .container .leftPart form .creditcard::placeholder {
+    color: rgba(0, 0, 0, 0.432);
+    font-size: 16px;
+  }
+  .checkout .container .leftPart form .dateSelection {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    height: 35%;
+  }
+  .checkout .container .leftPart form .dateSelection .day {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .checkout .container .leftPart form .dateSelection .day label {
+    margin-bottom: 0.5vh;
+  }
+  .checkout .container .leftPart form .dateSelection .day #day {
+    width: 40%;
+    height: 20%;
+    border: 0.5px solid #426bff2f;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px #426bff2f;
+    cursor: pointer;
+  }
+  .checkout .container .leftPart form .dateSelection .monthAndYear {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .checkout .container .leftPart form .dateSelection .monthAndYear label {
+    margin-bottom: 0.5vh;
+  }
+  .checkout .container .leftPart form .dateSelection .monthAndYear input {
+    width: 100%;
+    height: 20%;
+    border: 0.5px solid #426bff2f;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px #426bff2f;
+    padding-left: 15px;
+    cursor: pointer;
+  }
+  .checkout .container .leftPart form .cryptogram {
+    width: 40%;
+    height: 10%;
+    margin-bottom: -2vh;
+  }
+  .checkout .container .leftPart form .cryptog {
+    width: 30%;
+    height: 7vh;
+    border-radius: 10px;
+    border: 0.5px solid #426bff2f;
+    box-shadow: 10px 10px 15px #426bff2f;
+    margin-bottom: 5vh;
+    font-size: 20px;
+    padding-left: 1%;
+  }
+  .checkout .container .leftPart form .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #426CFF;
+    color: white;
+    border: 1.5px solid #426CFF;
+    width: 20vw;
+    height: 6vh;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .checkout .container .leftPart form .submit:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+    color: black;
+    border: 1.5px solid black;
+    transition: 0.3s all ease-in-out;
+  }
+  .checkout .container .rightPart {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

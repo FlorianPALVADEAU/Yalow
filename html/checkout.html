@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="64x64" href="../src/blanc_simple_1.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Yalow</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+             <ul>
+                 <li><a href="index.html"><img src="../src/logo_yalow.png" alt="Logo Yalow"></a></li>
+                 <li><a class="" href="index.html">Accueil</a></li>
+                 <li><a href="about.html">A propos</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+             </ul>
+        </nav>
+
+        <div class="logRegister">
+            <a href="#" class="logInButton" >S'inscrire</a>
+            <a href="#" class="RegisterButton" >Se Connecter</a>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Checkout -->
+    <div class="checkout">
+        <div class="container">
+            <div class="leftPart">
+                <h1>Choisir le moyen de paiement :</h1>
+                <form action="">
+                    <div class="buttons">
+                        <button class="paypal">
+                            <p>Paypal</p>
+                            <img src="../src/paypal_icon.svg" alt="paypal_icon">
+                        </button>
+                        <button class="creditcard">
+                            <p>Carte</p>
+                            <img src="../src/creditcard_icon.svg" alt="creditcard_icon">
+                        </button>
+                    </div>
+                    <label for="creditcard" class="mainLabel">Numéro de carte</label>
+                    <input name="creditcard" class="creditcard" type="text" placeholder="3478 8918 0923 6517">
+                    <label for="dateSelection" class="mainLabel ds">Date d’expiration</label>
+                    <div class="dateSelection">
+                        <div class="day">
+                            <label for="day" class="label">Jour</label>
+                            <select id="day">
+                                <option value="" selected></option>
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="tree">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
+                                <option value="seven">7</option>
+                                <option value="eight">8</option>
+                                <option value="nine">9</option>
+                                <option value="ten">10</option>
+                                <option value="eleven">11</option>
+                                <option value="twelve">12</option>
+                                <option value="thirteen">13</option>
+                                <option value="fourteen">14</option>
+                                <option value="fiveteen">15</option>
+                                <option value="sixteen">16</option>
+                                <option value="seventeen">17</option>
+                                <option value="eighteen">18</option>
+                                <option value="nineteen">19</option>
+                                <option value="twenty">20</option>
+                                <option value="twenty-one">21</option>
+                                <option value="twenty-two">22</option>
+                                <option value="twenty-tree">23</option>
+                                <option value="twenty-four">24</option>
+                                <option value="twenty-five">25</option>
+                                <option value="twenty-six">26</option>
+                                <option value="twenty-seven">27</option>
+                                <option value="twenty-eight">28</option>
+                                <option value="twenty-nine">29</option>
+                                <option value="thirty">30</option>
+                                <option value="thirty-one">31</option>
+                            </select>
+                        </div>
+                        <div class="monthAndYear">
+                            <label for="month" class="label">Mois et année</label>
+                            <input name="month" type="month">
+                        </div>
+                    </div>
+                    <label for="cryptogram" class="cryptogram">
+                        Cryptogramme 
+                        <img src="../src/bx_help-circle.png" alt="help circle"> 
+                        <div class="help">Retrouvez ce code au dos de votre carte banquaire !</div>
+                    </label>
+                    <input type="text" name="cryptogram" class="cryptog">
+                    <!-- <button type="submit" class="submit">Payer</button> -->
+                    <a href="./thanks.html" class="submit">Payer</a>
+                </form>
+            </div>
+    
+            <div class="rightPart">
+                <div class="cContainer">
+                    <div class="card">
+                        <h4>S'abonner</h4>
+                        <div class="p1"><p class="blue">10€</p>/ mois</div>
+                        <p class="p2">Pour <b>tous les accès</b> aux avantages YALOW</p>
+                        <div class="logos">
+                            <img src="../src/chat_icon_grey_version.png" alt="chat_icon">
+                            <img src="../src/users_icon.png" alt="users_icon">
+                            <img src="../src/cloud_icon.png" alt="cloud_icon">
+                        </div>
+                    </div>    
+                </div>
+                <div class="overlay">
+                    <div class="overlayy"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Checkout -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="div_footer">
+            <div class="logo-footer">
+                <img src="../src/YALOW_LOGO.png" alt="logo Yalow">
+            </div>
+            <div class="services">
+                <a href="" class="text-foot">YALOW Cloud</a>
+                <a href="" class="text-foot">YALOW Messagerie</a>
+                <a href="" class="text-foot">YALOW Visio</a>
+            </div>
+            <div class="politique">
+                <a href="" class="text-foot">Politique</a>
+                <a href="" class="text-foot">Assistance</a>
+                <a href="" class="text-foot">Téléchargement</a>
+            </div>
+            <div class="reseaux">
+                <img src="../src/akar-icons_linkedin-box-fill.png" alt="linkedin">
+                <img src="../src/ant-design_facebook-filled.png" alt="facebook">
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+</body>
+</html>
